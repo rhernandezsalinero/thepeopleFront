@@ -1,0 +1,110 @@
+@import "../../styles";
+/* *{
+  border: 1px solid red;
+} */
+.head-box {
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.431968);
+  padding: 30px 0;
+  box-shadow: 0px 2px 6px rgba(103, 99, 139, 0.120674);
+
+  ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #ececec6e;
+    border-radius: 8px;
+
+}
+
+  ::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: $cOrange !important;
+  }
+
+  ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: $cOrange !important;
+  }
+
+  ::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: $cOrangeHover !important;
+  }
+
+  ::ng-deep .mat-form-field-label {
+    /*change color of label*/
+    color: $cOrange !important;
+  }
+  mat-datepicker-toggle {
+    color: $cOrange !important;
+    &:hover {
+      color: $cOrangeHover !important;
+    }
+  }
+
+  .box-Search {
+    display: flex;
+    justify-content: flex-end;
+    mat-form-field {
+      display: block;
+      align-self: auto;
+    }
+  }
+}
+
+.box-card {
+  padding: 10px;
+  display: flow-root;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+  &:hover {
+    padding-top: 5px;
+    .box-data {
+      box-shadow: 0px 2px 18px rgba(73, 73, 98, 0.4);
+      h2 {
+        color: $cOrange;
+      }
+    }
+    .box-img {
+      margin-bottom: -21px;
+    }
+  }
+  .box-data {
+    transition: all 0.3s ease;
+    background: #ffffff;
+    box-shadow: 0px 2px 18px rgba(73, 73, 98, 0.170325);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0 10px;
+    h2 {
+      transition: all 0.3s ease;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      color: #000000;
+      margin-top: 20px;
+    }
+    .date {
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+    }
+    .ptag {
+      background: #000000;
+      border-radius: 18.5px;
+      color: white;
+      padding: 5px 13px;
+      display: inline-block;
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+  .box-img {
+    transition: all 0.2s ease;
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: -16px;
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../styles";
+.main-box {
+  position: relative;
+  padding-top: 50px;
+  display: flow-root;
+  .main-image {
+    width: 65%;
+    height: calc(100vh - 250px);
+    border-radius: 18px;
+    min-height: 550px;
+    max-height: 800px;
+    background: url("../../assets/images/main1@2x.png") center center no-repeat;
+    background-size: cover;
+    float: right;
+    border-radius: 29px;
+  }
+  .box-left {
+    position: absolute;
+    display: block;
+    z-index: 9;
+    width: 55%;
+    h1 {
+      padding: 100px 0;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 63px;
+      span {
+        color: $cOrange;
+      }
+    }
+    .box-input {
+      box-shadow: 0px 2px 15px rgba(103, 99, 139, 0.120674);
+      border-radius: 19px;
+      background: #fff;
+      padding: 7px;
+      input {
+        border: 0px;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 20px;
+        outline: none;
+        width: calc(100% - 75px);
+      }
+      .btn-search {
+        background: $cOrange;
+        box-shadow: 0px 2px 15px rgba(255, 161, 0, 0.343262);
+        border-radius: 15px;
+        width: 75px;
+        height: 61px;
+        &:hover{
+          background: $cOrangeHover;
+        }
+      }
+    }
+  }
+}

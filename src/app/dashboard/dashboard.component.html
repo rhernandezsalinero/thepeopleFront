@@ -1,0 +1,17 @@
+<div class="d-flex my100 h-100" data-spy="affix">
+  <div class="d-flex flex-column p-3 text-white bg-dark" style="width: 280px;">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <span class="fs-4">Mi panel</span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+              <a href="#" class="nav-link text-white" [routerLink]="['main']" routerLinkActive="active">Home</a>
+          </li>
+      </ul>
+      <a href="#" class="nav-link text-white" (click)="closeSession()">Cerrar Sesion</a>
+  </div>
+  <div class="p-2 w-100 bd-highlight overflow-auto">
+      <router-outlet></router-outlet>
+  </div>
+</div>

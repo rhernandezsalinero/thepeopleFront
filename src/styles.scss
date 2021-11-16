@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+$bgColor: #f4f6f7;
+$cBlack: #000000;
+$cOrange: #ffb500;
+$cOrangeHover: #ff9800;
+$cBlueDark: #465274;
+
+body {
+  background-color: $bgColor;
+}
+
+* {
+  font-family: "Roboto", Arial, sans-serif;
+
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+
+}
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.login-box {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  height: 100vh;
+  padding-bottom: 40px;
+}
+
+.form-signin a {
+  text-align: right;
+  width: 100%;
+  display: block;
+  font-size: 13px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
